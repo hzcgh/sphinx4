@@ -152,7 +152,7 @@ public class DialogDemo {
         jsgfRecognizer.startRecognition(true);
         while (true) {
             System.out.println("Choose menu item:");
-            System.out.println("Example: go to the bank account");
+            System.out.println("Example: bank account");
             System.out.println("Example: exit the program");
             System.out.println("Example: weather forecast");
             System.out.println("Example: digits\n");

@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  */
 public class PropertySheet implements Cloneable {
 
-    public static final String COMP_LOG_LEVEL = "logLevel";
+    public static final String COMP_LOG_LEVEL = "WARNING";
 
     private Map<String, S4PropWrapper> registeredProperties = new HashMap<String, S4PropWrapper>();
     private Map<String, Object> propValues = new HashMap<String, Object>();

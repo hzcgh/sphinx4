@@ -24,7 +24,9 @@ public class Microphone {
     private final TargetDataLine line;
     private final InputStream inputStream;
 
-    public Microphone(
+    private static final Microphone INSTANCE = new Microphone(16000, 16, true, false);
+
+    private Microphone(
             float sampleRate,
             int sampleSize,
             boolean signed,
@@ -50,5 +52,9 @@ public class Microphone {
 
     public InputStream getStream() {
         return inputStream;
+    }
+
+    public static Microphone getInstance(){
+        return INSTANCE;
     }
 }
